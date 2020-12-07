@@ -9,7 +9,7 @@ console.log(screen);
 
 */
 
-//Print each mouse location in a second.
+//Print mouse location in a second.
 function moveMouse(){
     var mouse = robot.getMousePos();
     console.log(mouse);
