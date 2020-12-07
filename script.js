@@ -1,4 +1,5 @@
 var robort = require("robotjs");
+var childProcess = require('child_process'); 
 setTimeout(openNotepad,2000);
 
 
@@ -22,6 +23,7 @@ function startChrome(){
     robort.typeString("Google chrome");
     robort.keyTap("enter");
     setTimeout(searchAmazone, 2000);
+    childProcess.exec('start chrome --kiosk localhost:4000');
 }
 function searchAmazone(){
     robort.moveMouseSmooth(170, 63);
